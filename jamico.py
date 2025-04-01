@@ -13,6 +13,7 @@ def create_room(x_length, y_length, wall_density, art_piece_number):
         x = x_temp + 1
         for y in range(y_length):
             if random.random() < wall_density:
+                
                 walls.append(LineString([(x, y), (x, y + 1)]))
     # add horizontal walls:
     for x in range(x_length):
